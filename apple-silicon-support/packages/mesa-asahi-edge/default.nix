@@ -15,15 +15,16 @@
 }).overrideAttrs (oldAttrs: {
   # version must be the same length (i.e. no unstable or date)
   # so that system.replaceRuntimeDependencies can work
-  version = "24.2.0";
+  version = "24.3.0-devel";
   src = fetchFromGitLab {
     # tracking: https://pagure.io/fedora-asahi/mesa/commits/asahi
     domain = "gitlab.freedesktop.org";
     owner = "asahi";
     repo = "mesa";
-    rev = "asahi-20240727";
-    hash = "sha256-XXhmiedwJwjKTZeApDE/GdAzIteteoi78J4LJ3WBJsY=";
+    rev = "asahi-20241104";
+    hash = "";
   };
+
 
   mesonFlags =
     # remove flag to configure xvmc functionality as having it
