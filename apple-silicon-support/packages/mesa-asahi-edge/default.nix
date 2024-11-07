@@ -25,7 +25,6 @@
     hash = "";
   };
 
-
   mesonFlags =
     # remove flag to configure xvmc functionality as having it
     # breaks the build because that no longer exists in Mesa 23
